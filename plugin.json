@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mini-me-portable",
+  "version": "0.1.0",
+  "description": "A local personal adviser that keeps owner choices and evidence under the owner's control.",
+  "author": { "name": "Colton Harris" },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Mini Me",
+        "shortDescription": "Portable personal adviser",
+        "longDescription": "Consult a locally stored personal profile through a shared MCP server, CLI, or library. Predictions are advisory and owner records remain local.",
+        "developerName": "Colton Harris",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": "Consult Mini Me only for the relevant scope, cite evidence and uncertainty, and ask the owner before learning from new material or recording a real outcome."
+      }
+    }
+  }
+}
